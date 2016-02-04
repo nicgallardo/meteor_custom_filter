@@ -1,0 +1,14 @@
+<template name="index">
+This is a filter test!
+  <div class="row">
+    {{> iterate}}
+  </div>
+</template>
+
+<template name="iterate">
+  {{#each people}}
+    <div class="row">
+      id: {{_id}}
+    </div>
+  {{/each}}
+</template>
